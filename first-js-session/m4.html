@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li id="firstli">first Number =</li>
+      <li id="secondli">second number =</li>
+    </ul>
+    <h1 id="result">Result =</h1>
+    <button id="firstNumber">first number</button>
+    <button id="secondNumber">second number</button>
+    <button id="showResult">show result</button>
+    <script>
+      var x = 0;
+      var y = 0;
+      firstNumber.addEventListener("click", function () {
+        x = Number(prompt("enter first name"));
+        firstli.textContent += x;
+      });
+      secondNumber.addEventListener("click", function () {
+        y = Number(prompt("enter second name"));
+        secondli.textContent += y;
+      });
+      showResult.addEventListener("click", function () {
+        var z = x + y;
+        result.textContent += z;
+      });
+    </script>
+  </body>
+</html>
