@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="mainh1">this is h1</h1>
+    <ul>
+      <li>li1</li>
+      <li>li2 <span>color</span></li>
+      <li class="mainp">li3<span>color</span></li>
+    </ul>
+    <p class="mainp">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto qui
+      cumque cum tenetur ipsam autem assumenda, culpa est? Sint quibusdam
+      expedita excepturi voluptatem ullam illo vitae eum repellat magni ipsam!
+    </p>
+    <script>
+      document.title = "ahmed";
+      document.getElementById("mainh1").style.color = "red";
+      var items = document.getElementsByTagName("li");
+      for (var i of items) {
+        i.style.color = "green";
+      }
+      var items2 = document.getElementsByClassName("mainp");
+      for (var x of items2) {
+        x.style.color = "blue";
+      }
+      var items3 = document.querySelectorAll("ul li span");
+      for (var z of items3) {
+        z.style.color = "aqua";
+      }
+    </script>
+  </body>
+</html>

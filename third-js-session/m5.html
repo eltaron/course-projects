@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="mainh1"></h1>
+    <input type="text" id="mainInput" />
+    <button id="saveButton">save</button>
+    <script>
+      var a = ["oppo", "samsung", "nokia"];
+      mainh1.textContent = a;
+      saveButton.addEventListener("click", function () {
+        var x = mainInput.value;
+        a.push(x);
+        mainh1.textContent = a;
+      });
+    </script>
+  </body>
+</html>

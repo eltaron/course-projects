@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>m3</title>
+  </head>
+  <body>
+    <input type="text" id="mainInput" />
+    <button id="saveCha">save</button>
+    <h1 id="m1"></h1>
+    <script>
+      var a = ["oppo", "samsung", "nokia"];
+      saveCha.addEventListener("click", function () {
+        var x = mainInput.value;
+        a.push(x);
+        m1.textContent = a;
+      });
+      var a = [5, 9, 6, 7];
+      a.sort();
+      console.log(a[1]);
+      a.reverse();
+      console.log(a[a.length - 2]);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <ul id="mainUl"></ul> -->
+    <input type="text" id="mainInput" value="ahmed@gmail@com" />
+    <button id="saveChanges">save</button>
+
+    <script>
+      saveChanges.addEventListener("click", function () {
+        var x = mainInput.value;
+        var y = x.split(",");
+        console.log(x.startsWith("ahmed"));
+      });
+      console.log(mainInput);
+    </script>
+    <!-- <script>
+      var n = "ahmed";
+      var a = 32;
+      var x = `
+        <li>my name is ${n.toUpperCase()}</li>
+        <li>my age is ${a}</li>
+      `;
+      mainUl.innerHTML = x;
+    </script> -->
+    <!-- block and global scope -->
+    <!-- <script>
+      {
+        const x = 4;
+        console.log("inside block " + x);
+      }
+      console.log("outside block " + x);
+    </script> -->
+    <!-- <script>
+      var x = "5";
+      var y = 5;
+      console.log(x == y); //false
+    </script> -->
+    <!-- <script>
+      var x = `ahme
+      d123@#`;
+      var y = 12.99;
+      var b = true;
+      var a = ["ahmed", 123, b, "mohamed"];
+      var o = {
+        name: "ahmed",
+        age: 32,
+        2.99: 15,
+      };
+      var u = undefined;
+      console.log(typeof u == "undefined");
+      var e = "";
+    </script> -->
+    <!-- <script>
+      var x = 12;
+      var y = x.toString();
+      console.log(typeof y);
+      var pi = Math.PI;
+      console.log(typeof pi.toPrecision(3));
+    </script> -->
+    <!-- <script>
+      var a = [9, 99, 5, 6, 3];
+      console.log(Math.min(...a));
+    </script> -->
+  </body>
+</html>
