@@ -1,0 +1,176 @@
+/* start header */
+header {
+  position: absolute;
+  flex-wrap: wrap;
+}
+header .buttons button {
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+  padding: 15px 30px;
+  border-radius: 0;
+  outline: none;
+}
+header .buttons button:hover {
+  color: var(--text-color);
+}
+header .buttons .dropdown-menu {
+  padding: 10px;
+  text-align: center;
+}
+header .buttons .dropdown-item {
+  color: var(--main-color);
+}
+
+/* end header */
+/* start main */
+/* start hero */
+#hero {
+  background-image: url("../images/ice-age-5-collision-course-2560x1440-squirrel-best-animations-of-2016-8892.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+#hero .overlay {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, #11133f, transparent 50%, #11133f);
+}
+#hero .overlay h1 {
+  font-size: 60px;
+}
+@media (max-width: 768px) {
+  #hero .overlay h1 {
+    font-size: 3em;
+    color: #00b0f0;
+  }
+}
+#hero .overlay p {
+  font-size: 30px;
+}
+.email input {
+  padding: 10px;
+  width: 45%;
+  border: 0;
+}
+.email button {
+  background-color: var(--main-color);
+  border: 0;
+  padding: 10px;
+}
+#hero .overlay i {
+  font-size: 40px;
+  color: var(--main-color);
+  margin-top: 15px;
+  position: relative;
+  top: 0;
+  animation: moveDown 2s linear infinite alternate;
+}
+@keyframes moveDown {
+  from {
+    top: 0;
+  }
+  to {
+    top: 25px;
+  }
+}
+/* end hero */
+/* start audio */
+.audio {
+  padding: 60px 0;
+  margin-top: 0 !important;
+}
+.audio img {
+  width: 80%;
+  position: relative;
+  right: 0;
+  animation: moveright 1.5s linear infinite alternate;
+}
+@keyframes moveright {
+  0% {
+    right: -30px;
+  }
+  50% {
+    right: 0;
+  }
+  100% {
+    right: 30px;
+  }
+}
+/* end audio */
+/* start programs */
+#programs {
+  padding: var(--main-padding);
+}
+#programs img {
+  height: 600px;
+}
+
+#programs .carousel-caption {
+  background-color: #00b0f054;
+  bottom: 2.45rem;
+}
+#programs .carousel-indicators [data-bs-target] {
+  height: 6px;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  background-color: #00b0f0;
+  height: 80px;
+  top: 25px;
+  width: 90px;
+}
+.carousel-control-prev {
+  left: 20px;
+}
+.carousel-control-next {
+  right: auto;
+  left: 110px;
+}
+@media (max-width: 768px) {
+  #programs img {
+    height: 300px;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    height: 40px;
+    top: 15px;
+    width: 40px;
+  }
+  .carousel-control-next {
+    left: 60px;
+  }
+}
+/* end programs */
+#faq {
+  padding: 60px 0;
+}
+.accordion-button::after {
+  margin-left: 0;
+  margin-right: auto;
+}
+.accordion-item,
+.accordion-button,
+.accordion-button:not(.collapsed) {
+  background-color: var(--body-color);
+  color: #fff;
+}
+#team {
+  padding: 60px 0;
+}
+#team img {
+  height: 200px;
+}
+.card-img-overlay {
+  text-align: center;
+  background-color: #11133f58;
+  padding-top: 30px;
+}
+/* end main */
+/* start footer */
+footer {
+  margin-top: 10px;
+  background-color: #11133f;
+}
+#copyright {
+  background-color: var(--body-color);
+}
+/* end footer */
